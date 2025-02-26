@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>常見問題</title>
+    <!--  掛載bootstrap.css  -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    /> -->
+    <link rel="stylesheet" href="./css/custom.css" />
+    <!-- bootstrap-icon.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body class="h-100 d-flex flex-column">
+    <main class="flex-shrink-0">
+      <nav
+        class="mb-2 shadow-lg border-top border-5 border-success navbar navbar-expand-md navbar-light bg-white"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold text-info" href="./index.html"
+            >壽山動物園</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">關於我們</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  動物列表
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">草食動物</a></li>
+                  <li><a class="dropdown-item" href="#">肉食動物</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">常見問題</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">門市店鋪</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">聯絡我們</a>
+              </li>
+            </ul>
+            <div class="d-flex">
+              <button
+                data-bs-toggle="modal"
+                data-bs-target="#loginModal"
+                class="border-0 bg-transparent"
+              >
+                <i class="bi bi-person-arms-up fs-1"></i>
+              </button>
+              <button
+                data-bs-toggle="offcanvas"
+                data-bs-target="#cartExample"
+                aria-controls="cartExample"
+                class="border-0 bg-transparent"
+              >
+                <i class="bi bi-cart4 fs-1"></i>
+              </button>
+
+              <!-- <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-success" type="submit">
+          Search
+        </button> -->
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="bg-primary py-5 text-center mb-5">
+        <p><i class="bi bi-flag-fill fs-2"></i></p>
+        <h2 class="text-white">FAQ 常見問題</h2>
+        <p class="text-white">充滿愛與歡笑的動物園區</p>
+      </div>
+      <nav aria-label="breadcrumb" class="ms-3">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="./index.html">首頁</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            FAQ 常見問題
+          </li>
+        </ol>
+      </nav>
+      <div class="container mb-5">
+        <!-- .row>.col-12.col-md-2+.col-12.col-md-10 -->
+        <div class="row">
+          <div class="col-12 col-lg-2">
+            <ul class="list-group">
+              <div class="list-group">
+                <a
+                  href="#"
+                  class="list-group-item list-group-item-action active"
+                  aria-current="true"
+                >
+                  遊園問題
+                </a>
+                <a href="#" class="list-group-item list-group-item-action"
+                  >門票問題</a
+                >
+                <a href="#" class="list-group-item list-group-item-action"
+                  >領養問題</a
+                >
+              </div>
+            </ul>
+          </div>
+          <div class="col-12 col-md-10">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    參觀須知
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    禁止攜帶各類寵物入園：勿將寵物放置於手提袋或背包裡攜帶寵物入園喔！
+                    禁止攜帶兇器或危險物品入園。 禁止餵食動物。
+                    請勿將塑膠袋、紙杯、飲料罐、食品包裝袋等物品投入動物展示欄舍內，
+                    以免動物誤食， 導致生病或死亡。
+                    請勿以棍棒、石頭或鐵器等戲弄或打傷動物，或是用不正當動作、拍打欄杆或展示櫥窗、嘶喊以驚擾動物。
+                    園區全面禁止吸煙。
+                    請勿騎腳踏車、幼兒三輪車、滑板車及直排輪入園。
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    兒童牧場體驗須知
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    動物餵食體驗開放時間(雨天暫停餵食)：週二至週日上午10:00-11:00；下午14:00-15:00
+                    。牧草數量有限，發完為止。
+                    餵食體驗活動，請遵守解說員指導，以不影響動物安全為準則。
+                    為維護動物健康，每日採限額限量提供牧草及食物給遊客餵食動物。
+                    園區內的動、植物僅供教學使用，不可攜帶離園。
+                    拍攝動物，應採自然光，不可使用閃光燈，以免驚嚇牠們。
+                    請勿使用自行攜帶的食物來餵動物，以維護動物健康。
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    交通與停車
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    搭乘地點 高雄火車站 中山一路(靠近中山一路325巷口) 搭乘。
+                    捷運鹽埕埔站
+                    4號出口出站後於五福四路右轉約10公尺，華南銀行前站牌搭乘56號公車到達壽山動物園。
+                    輕軌文武聖殿站
+                    輕軌文武聖殿站下車後沿大公路走到鼓山一路右轉約50公尺台電站搭乘。（返程於建國四路口站下車,往回走250公尺至輕軌壽山公園站）
+                    發車時間
+                    每日上午08:30至17:30，平日40分鐘一班，假日每20分鐘一班，另假日加開捷運鹽埕埔站→動物園專線，10-15分鐘一班，歡迎民眾多加利用（周一休園停駛）。
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    導覽預約
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    20人以上的團體可預約專人導覽，請提前兩星期撥打預約電話，讓我們的專業導遊帶領您認識壽山的動物朋友們。
+                    快來預約吧，壽山動物園期待您的到來！ 申辦期間 / 導覽日前 30
+                    日開放預約 導覽時間 / 約 1.5 ~ 2 小時 預約電話 / 07-5215187
+                    分機 539
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                  >
+                    免票資格
+                  </button>
+                </h2>
+                <div
+                  id="collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFive"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    未滿 6 歲兒童 / 本市國民小學(含)以下學童 年滿 65 歲長輩
+                    身心障礙者及必要之陪伴者一人 本市低收入戶
+                    依法設立之社會福利機構。(需來函申請)
+                    本市國民小學辦理師生校外教學活動
+                    設籍本市鼓山區登山里、興宗里、光化里、山下里、鼓岩里、綠川里、寶樹里、峰南里、樹德里、河邊里、壽山里、惠安里及
+                    新民里之居民。 導遊出示交通部觀光署核發之導遊證
+                    其他依法得予免費者
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- .bg-primary>.container>.row>.col-12.col.lg-4*3 -->
+    <div class="mt-auto bg-primary py-5 text-white text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-4 order-lg-3">
+            <a href="" class="btn btn-outline-light">動物專區</a>
+            <a href="" class="btn btn-outline-light">禮品專區</a>
+            <div>
+              <p class="d-none d-lg-inline fs-6">FOLLOW US</p>
+              <a href="" class="text-white me-2"
+                ><i class="bi bi-instagram fs-5"></i
+              ></a>
+              <a href="" class="text-white me-2"
+                ><i class="bi bi-facebook fs-5"></i
+              ></a>
+              <a href="" class="text-white me-2"
+                ><i class="bi bi-line fs-5"></i
+              ></a>
+              <a href="" class="text-white me-2"
+                ><i class="bi bi-youtube fs-5"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 order-lg-2 fs-1 mb-3 d-none d-lg-block">
+            壽山動物園
+          </div>
+          <div class="col-12 col-lg-4 order-lg-1 mb-3">
+            <p class="fs-6">服務時間：週二~周日09：00~17：00</p>
+            <p class="fs-6">電話：07-5215187</p>
+            <p class="fs-6">傳真：07- 5331502</p>
+            <p>
+              <a href="" class="me-3 text-white text-decoration-none fs-4"></a
+              >隱私權
+
+              <a href="" class="me-3 text-white text-decoration-none fs-4"></a
+              >資訊安全
+
+              <a href="" class="me-3 text-white text-decoration-none fs-4"></a
+              >版權宣告
+
+              <a href="" class="me-3 text-white text-decoration-none fs-4"></a
+              >聯絡我們
+            </p>
+            <p class="fs-6">Copyright © 2025 All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">登入</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="" class="needs-validation" novalidate>
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                  required
+                />
+                <div class="invalid-feedback">請輸入電子郵件</div>
+                <label for="floatingInput">電子郵件</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="floatingPassword"
+                  placeholder="Password"
+                  required
+                />
+                <div class="invalid-feedback">請輸入密碼</div>
+                <label for="floatingPassword">密碼</label>
+              </div>
+              <div class="text-end mb-2">
+                <a href="">忘記密碼</a>
+              </div>
+              <div>
+                <input
+                  class="btn btn-primary w-100 mb-2"
+                  type="submit"
+                  value="登入"
+                />
+              </div>
+            </form>
+            <div class="">
+              <a href="">立即註冊</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="cartExample"
+      aria-labelledby="cartExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="cartExampleLabel">Offcanvas</h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          Some text as placeholder. In real life you can have the elements you
+          have chosen. Like, text, images, lists, etc.
+        </div>
+        <div class="dropdown mt-3">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-bs-toggle="dropdown"
+          >
+            Dropdown button
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!--  掛載bootstrap.js  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/validate.js"></script>
+  </body>
+</html>
